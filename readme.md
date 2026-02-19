@@ -94,6 +94,24 @@ pnpm dev
 pnpm build
 ```
 
+## 🚀 Deployment
+
+The project is configured for seamless deployment on **Cloudflare Pages**.
+
+### Steps to Deploy
+
+1. **Build the project**:
+   ```bash
+   pnpm build
+   ```
+2. **Deploy to Cloudflare**:
+   - Connect your GitHub repository to Cloudflare Pages.
+   - Use the following settings:
+     - **Framework preset**: `Astro`
+     - **Build command**: `pnpm build`
+     - **Build output directory**: `dist`
+     - **Environment variables**: Ensure `NODE_VERSION` is set to `18` or higher.
+
 ---
 
 ## 🛡 License
