@@ -20,7 +20,7 @@ const steps = [
   {
     id: 3,
     title: 'Procesamiento de Alta Velocidad',
-    description: 'Detección instantánea en 0.8s. Procesamiento completo en apenas unos segundos. Tu flujo de trabajo nunca se detiene.',
+    description: 'Detección instantánea. Procesamiento completo en apenas unos segundos. Tu flujo de trabajo nunca se detiene.',
     icon: <CheckCircle2 className='w-8 h-8 text-white' />,
     color: 'bg-violet-600'
   },

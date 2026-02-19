@@ -1,536 +1,101 @@
-# Documento Maestro del Proyecto — **Evalix**
+# Evalix | Precision-Driven Exam Correction
+
+[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/self-david/evalix-web)
+[![Tech Stack](https://img.shields.io/badge/stack-Astro--React--Tailwind-orange.svg)](https://astro.build)
+
+**Evalix** is a high-performance automated exam correction platform designed for academic institutions and independent educators. It leverages local artificial intelligence for near-instant optical scanning and accurate result generation.
 
 ---
 
-## 1. Identidad del Proyecto
+## 🌐 EXAMS Ecosystem
 
-### Nombre del producto
+Evalix is part of the **EXAMS Ecosystem**, a distributed suite of tools designed for full-cycle academic assessment management:
 
-**Evalix**
-
-### Significado del nombre
-
-- Raíz: **Eval** → evaluación.
-- Sufijo moderno → suena tecnológico, ágil y digital.
-- Objetivo: transmitir precisión académica + innovación tecnológica.
-- Ventajas:
-  - Corto y memorable
-  - Pronunciación simple
-  - Escalable como marca (Evalix Suite, Evalix Cloud, etc.)
+- **[Qualifier](file:///c:/projects/EXAMS/qualifier)**: The core administrative engine. Used for creating exam templates, training custom AI models, and managing institutional data.
+- **[scan-core](file:///c:/projects/EXAMS/scan-core)**: The high-performance Rust-based detection engine that powers both the web portal and the local scanning tools.
+- **[skeleton-scanner-exams](file:///c:/projects/EXAMS/skeleton-scanner-exams)**: The cross-platform scanning interface used for mass processing of exams.
 
 ---
 
-## 2. Propuesta de Valor
+## 🎨 Design Identity
 
-### Qué hace el producto
+### Color Palette
 
-Aplicación que:
+The brand identity is built on a foundation of professional academic trust and modern technical efficiency.
 
-- Escanea hojas de examen con cámara
-- Detecta respuestas automáticamente
-- Compara contra plantilla correcta
-- Genera resultados y analíticas visuales
+- **Primary Brand**: `#0B3D91` (Professional Navy - Trust & Authority)
+- **Secondary**: `#E0E0E0` (Neutral Grey - Cleanliness & Balance)
+- **Dark Accent**: `#051C42` (Deep Space - Contrast)
+- **Background**: `#F8FAFC` (Light Slate - Readability)
 
-### Diferenciadores clave
+### Typography
 
-1. Procesamiento local (rápido y privado)
-2. Personalización de exámenes
-3. No requiere formatos rígidos
-4. Compatible con uso offline
-5. Opciones nube/local según cliente
+- **Primary**: `Outfit` (Modern, geometric, and clean for headings)
+- **Secondary**: `Inter` (Optimized for readability in body text)
 
 ---
 
-## 3. Ventajas Competitivas
+## 🚀 Key Features
 
-### Frente a soluciones tradicionales
-
-- No requiere lectores ópticos dedicados
-- Sin hojas especiales costosas
-- Implementación rápida
-
-### Frente a plataformas modernas
-
-- No depende completamente de internet
-- Mayor flexibilidad en diseño de exámenes
-- Personalización por cliente
-- Menor fricción de adopción
+- **Local Processing**: Near-instant inference (~0.8s per exam) without server latency.
+- **Dynamic Grading**: Automatic detection of marked answers via computer vision.
+- **Custom Templates**: Create and calibrate exam sheets based on your specific needs.
+- **Visual Analytics**: Interactive D3.js powered charts for performance tracking.
+- **Offline Capability**: Native support for local workflows via Tauri.
 
 ---
 
-## 4. Modelo Técnico
+## 🛠 Tech Stack
 
-### Procesamiento
-
-- On-device inference (~0.8s por examen)
-- Sin latencia de servidor
-
-### Almacenamiento
-
-Dos modos:
-
-#### Modo económico
-
-- Base de datos local (SQL)
-- Todo en dispositivo
-
-#### Modo robusto
-
-- Base de datos en nube
-- Persistencia multiusuario
-- Históricos compartidos
+- **Framework**: [Astro](https://astro.build/) (Static Site Generation & High Performance)
+- **UI Library**: [React](https://react.dev/) (Interactive Components)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (Modern Utility-First Styles)
+- **Runtime**: [Tauri](https://tauri.app/) (Rust-based Multi-platform Deployment)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Charts**: [D3.js](https://d3js.org/) (Precise DOM Manipulations & Visualizations)
 
 ---
 
-## 5. Stack Tecnológico Definido
+## 📂 Project Structure
 
-### Frontend
-
-- React
-
-### Runtime
-
-- Tauri (Rust + Web stack)
-- Multiplataforma (móvil + desktop)
-
-### Visualización de datos
-
-- **D3.js**
-  - Elegido por:
-    - Alta personalización
-    - Control fino del DOM
-    - Escalabilidad visual
-
-### Exportación
-
-- Generación PDF local
-- Sin necesidad de backend
-- Compatible con entorno Tauri
+```text
+src/
+├── components/     # UI Components (Hero, Features, Pricing, etc.)
+├── layouts/        # Page Layouts (MainLayout)
+├── lib/            # Utility Functions & Logic
+├── pages/          # Astro Routing & Pages
+└── styles/         # Global Styles (Tailwind & CSS Variables)
+```
 
 ---
 
-## 6. Flujo Principal del Producto
+## 🏁 Getting Started
 
-### Flujo de profesor
+### Prerequisites
 
-#### Paso 1 — Crear examen base
+- [Node.js](https://nodejs.org/) (v18+)
+- [pnpm](https://pnpm.io/) (Recommended)
 
-1. Tomar hoja con respuestas correctas
-2. Escanear
-3. Guardar como plantilla
+### Development
 
-#### Paso 2 — Calificar
+```bash
+# Install dependencies
+pnpm install
 
-1. Seleccionar examen existente
-2. Escanear hoja de alumno
-3. Comparación automática
-4. Generación de resultado
+# Start development server
+pnpm dev
+```
 
----
+### Build
 
-## 7. Sistema de Resultados
-
-### Tipos de visualización
-
-- Gráficas interactivas
-- Resúmenes claros
-
-### Tipos definidos
-
-- Barras
-- Pastel
-- Líneas evolutivas
-
-### Funcionalidades
-
-- Filtro por alumno
-- Comparación entre exámenes
-- Evolución de desempeño
-- Comparación con promedio
-
-> Implementación visual detallada se posterga a fase posterior.
+```bash
+# Generate production-ready files
+pnpm build
+```
 
 ---
 
-## 8. Diseño del Sitio Web
+## 🛡 License
 
-### Objetivo
-
-Generar:
-
-- Confianza
-- Profesionalismo
-- Claridad del producto
-- Conversión de clientes
-
----
-
-## 9. Paleta de Colores Oficial
-
-### Paleta elegida
-
-- Azul marino: **#0B3D91**
-  - Profesionalismo
-  - Confianza académica
-
-- Gris claro: **#E0E0E0**
-  - Neutralidad
-  - Limpieza visual
-
-- Blanco
-  - Contraste
-  - Minimalismo moderno
-
-### Justificación
-
-- Diferenciación de competidores
-- Estética institucional
-- Alto contraste UI
-
----
-
-## 10. Estructura del Sitio Web
-
-### 1. Inicio
-
-- Hero claro
-- Propuesta de valor
-- CTA visible
-
-#### Elementos
-
-- Título directo
-- Subtítulo breve
-- Botón principal
-
----
-
-### 2. Características
-
-Tres pilares visuales:
-
-- Personalización
-- Velocidad
-- Seguridad
-
-Con íconos simples.
-
----
-
-### 3. Demostración
-
-Contenido visual clave:
-
-- Screenshots
-- Flujo de escaneo
-- Ejemplo de resultados
-
-Objetivo: validación inmediata.
-
----
-
-### 4. Resultados
-
-Resumen:
-
-- Visualización de analíticas
-- Gráficas interactivas
-- Comparativas
-
----
-
-### 5. Precios
-
-Planes diferenciados:
-
-- Local
-- Nube
-- Personalizado
-
----
-
-### 6. Contacto
-
-Debe incluir:
-
-- Formulario simple
-- Correo
-- Canal directo
-
-Objetivo: conversión.
-
----
-
-### 7. Testimonios
-
-Estado actual:
-
-- Sección placeholder
-- Texto: “Próximamente testimonios reales”
-
----
-
-### 8. Recursos (fase futura)
-
-Contenido:
-
-- Guías
-- Videos
-- Buenas prácticas
-
-Objetivo:
-
-- Autoridad
-- Retención
-- Educación del mercado
-
----
-
-## 11. Navegación del Sitio
-
-### Estructura
-
-- Header fijo
-- Multipágina
-- Mobile-first
-
-### Prioridades
-
-- Información visible en homepage
-- Páginas separadas para profundidad
-
----
-
-## 12. Identidad Profesional
-
-### Posicionamiento del fundador
-
-Modelo:
-
-- Estudio independiente especializado
-
-### Narrativa
-
-- Liderazgo técnico directo
-- Equipo colaborador externo
-
-### Colaboradores
-
-- Ventas
-- Diseño
-- Operaciones
-
-### Beneficio
-
-- Profesionalismo sin corporativismo
-- Cercanía + confianza
-
----
-
-## 13. Estrategia SEO
-
-### 1. Metaetiquetas
-
-Cada página debe tener:
-
-- Title único
-- Meta description clara
-- Keywords relevantes
-
-Ejemplos keywords:
-
-- corrección automática de exámenes
-- escaneo de exámenes
-- calificación automática
-
----
-
-### 2. URLs
-
-Principios:
-
-- Legibles
-- Semánticas
-
-Ejemplos:
-
-- /resultados
-- /precios
-- /como-funciona
-
----
-
-### 3. Jerarquía de encabezados
-
-- H1: único por página
-- H2: secciones
-- H3: subsecciones
-
----
-
-### 4. Imágenes
-
-- Alt descriptivo
-- SEO semántico
-
----
-
-### 5. Estructura semántica
-
-- HTML limpio
-- Contenido jerárquico
-- Accesibilidad
-
----
-
-## 14. Buenas Prácticas Basadas en Competencia
-
-Inspiración estructural (sin copiar identidad):
-
-- Homepage fuerte
-- Explicación de producto
-- Casos de uso
-- Seguridad
-- Recursos
-- Pricing claro
-
-Aplicación en Evalix:
-
-- Adaptación personalizada
-- Simplificación estratégica
-
----
-
-## 15. Estrategia de Percepción de Marca
-
-Objetivo:
-
-- Profesional desde primera impresión
-
-Claves:
-
-- Diseño limpio
-- Lenguaje claro
-- Visuales reales
-- Cero promesas infladas
-
----
-
-## 16. Estrategia de Demostración
-
-Importancia alta.
-
-Opciones:
-
-- Video didáctico
-- Animación desde app
-- Captura real de flujo
-
-Contenido ideal:
-
-1. Cámara detectando examen
-2. Zoom en respuestas
-3. Detección automática
-4. Resultado final
-
----
-
-## 17. Roadmap Visual
-
-### Ya definido
-
-- Wireframe base
-- Secciones clave
-- Paleta
-- Identidad
-
-### Pendiente
-
-- UI detallada
-- Microinteracciones
-- Sistema de diseño
-
----
-
-## 18. Elementos No Prioritarios (post-MVP)
-
-- Blog
-- Centro de ayuda
-- Testimonios reales
-- Casos de éxito
-
----
-
-## 19. Alcance Actual del Documento
-
-Este documento cubre:
-
-- Producto
-- Marca
-- Web
-- UX
-- SEO
-- Posicionamiento
-- Arquitectura conceptual
-
----
-
-## 20. Elementos Fuera de Alcance (por ahora)
-
-- Diseño final del logo
-- Sistema de branding completo
-- Manual de identidad visual
-
----
-
-## 21. Estado del Proyecto
-
-### Nivel
-
-Pre-lanzamiento estructurado
-
-### Fortalezas
-
-- Base técnica sólida
-- Diferenciación clara
-- Enfoque práctico
-- Modelo flexible
-
-### Siguiente paso lógico
-
-- Desarrollo del sitio
-- Primeros clientes piloto
-- Validación real
-
----
-
-## 22. Resumen Ejecutivo
-
-**Evalix** es una plataforma de corrección automática de exámenes enfocada en:
-
-- Precisión
-- Velocidad
-- Flexibilidad
-
-Se posiciona como:
-
-- Alternativa ligera a soluciones enterprise
-- Herramienta poderosa para instituciones pequeñas y medianas
-
-Con:
-
-- Procesamiento local
-- Personalización de exámenes
-- Analíticas visuales
-- Arquitectura escalable
-
----
-
-Si después quieres:
-
-- Versión para inversores
-- Versión pitch deck
-- Versión roadmap técnico
-- Documento de ventas
-
-Se puede generar sobre esta base.
+Internal Project - All Rights Reserved.
