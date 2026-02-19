@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    --brand-primary: #0b3d91;
+    --brand-secondary: #e0e0e0;
+    --brand-dark: #051c42;
+    --brand-light: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+  }
+
+  html {
+    font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight text-slate-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-[#0B3D91] text-white rounded-full font-semibold transition-all duration-300 hover:bg-[#051C42] hover:shadow-lg hover:shadow-blue-900/20 active:scale-95 text-center inline-block;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 bg-white text-[#0B3D91] border-2 border-[#0B3D91] rounded-full font-semibold transition-all duration-300 hover:bg-[#E0E0E0] active:scale-95 text-center inline-block;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-slate-200 rounded-3xl shadow-sm hover:shadow-xl hover:border-blue-200/50 transition-all duration-500;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#0B3D91] to-[#1E40AF] bg-clip-text text-transparent;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

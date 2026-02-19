@@ -1,0 +1,22 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.jsx";
+import Hero from "../components/Hero.jsx";
+import HowItWorks from "../components/HowItWorks.jsx";
+import Features from "../components/Features.jsx";
+import Pricing from "../components/Pricing.jsx";
+import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
+---
+
+<MainLayout title="Evalix | Corrección Automática de Exámenes">
+  <Header client:load />
+  <main>
+    <Hero client:load />
+    <HowItWorks client:visible />
+    <Features client:visible />
+    <Pricing client:visible />
+    <Contact client:visible />
+  </main>
+  <Footer />
+</MainLayout>
