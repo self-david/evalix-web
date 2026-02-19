@@ -32,10 +32,10 @@ export default function Header() {
       <nav className='max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between'>
         <div className='flex items-center gap-2'>
           <div className='w-10 h-10 bg-[#0B3D91] rounded-xl flex items-center justify-center shadow-lg shadow-blue-900/20'>
-            <Rocket className='text-white w-6 h-6' />
+            <img src="/favicon.svg" alt="Evalix" />
           </div>
           <span className='text-2xl font-extrabold tracking-tight text-[#0B3D91]'>
-            Evalix
+            Evalix.
           </span>
         </div>
 
