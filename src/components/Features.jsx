@@ -6,7 +6,7 @@ const features = [
   {
     icon: <Sliders className='w-6 h-6' />,
     title: 'Personalización total',
-    description: 'No requiere formatos rígidos. Crea tus propios exámenes y Evalix se adaptará a tu diseño.',
+    description: 'Nos ajustamos a tus evaluaciones. Nuestros modelos se calibran para reconocer tus formatos de examen existentes.',
     color: 'bg-blue-100 text-[#0B3D91]',
     visual: (
       <div className='absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none'>
@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: <Zap className='w-6 h-6' />,
-    title: 'Velocidad récord',
-    description: 'Procesamiento on-device de ~0.8s por examen. Resultados instantáneos sin tiempos de espera.',
+    title: 'Velocidad optimizada',
+    description: 'Detección de hoja en 0.8s y análisis completo súper rápido. Diseñado para procesar grupos enteros en minutos.',
     color: 'bg-amber-100 text-amber-700',
     visual: (
       <div className='absolute right-4 top-4'>

@@ -5,8 +5,8 @@ import { Scan, FileEdit, CheckCircle2, BarChart } from 'lucide-react'
 const steps = [
   {
     id: 1,
-    title: 'Crea tu examen',
-    description: 'Usa cualquier editor de texto. No necesitas software especial. Simplemente imprime tu hoja de respuestas estándar.',
+    title: 'Diseño Flexible',
+    description: 'Trae tus propios exámenes. Nuestro sistema se integra con tus formatos actuales, adaptando el scanner para reconocer tus hojas de siempre.',
     icon: <FileEdit className='w-8 h-8 text-white' />,
     color: 'bg-blue-600'
   },
@@ -19,15 +19,15 @@ const steps = [
   },
   {
     id: 3,
-    title: 'Procesamiento Local',
-    description: 'El motor de IA analiza las respuestas en tu dispositivo en ~0.8 segundos. Sin subir datos a la nube.',
+    title: 'Procesamiento de Alta Velocidad',
+    description: 'Detección instantánea en 0.8s. Procesamiento completo en apenas unos segundos. Tu flujo de trabajo nunca se detiene.',
     icon: <CheckCircle2 className='w-8 h-8 text-white' />,
     color: 'bg-violet-600'
   },
   {
     id: 4,
     title: 'Analiza Resultados',
-    description: 'Obtén calificaciones instantáneas y gráficas de rendimiento por alumno y grupo.',
+    description: 'Obtén calificaciones y gráficas de rendimiento por alumno y grupo inmediatamente después del escaneo.',
     icon: <BarChart className='w-8 h-8 text-white' />,
     color: 'bg-[#0B3D91]'
   }
