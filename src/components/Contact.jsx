@@ -3,7 +3,7 @@ import { Mail, MessageSquare, Send } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id='contact' className='py-32 bg-[#0B3D91] text-white overflow-hidden relative'>
+    <section id='contact' className='py-24 bg-[#0B3D91] text-white overflow-hidden relative'>
       {/* Decorative circle */}
       <div className='absolute -top-64 -right-64 w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-3xl' />
       

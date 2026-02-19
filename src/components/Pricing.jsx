@@ -95,7 +95,7 @@ export default function Pricing() {
   ]
 
   return (
-    <section id='pricing' className='py-32 bg-slate-50/50'>
+    <section id='pricing' className='py-24 bg-slate-50/50'>
       <div className='section-container'>
         <div className='text-center max-w-3xl mx-auto mb-16'>
           <h2 className='text-4xl lg:text-5xl mb-6 text-[#0B3D91] font-extrabold tracking-tight'>
@@ -106,7 +106,7 @@ export default function Pricing() {
           </p>
 
           {/* Controls Container */}
-          <div className='bg-white p-8 rounded-3xl shadow-xl border border-slate-100 mb-12 flex flex-col items-center gap-10 max-w-2xl mx-auto'>
+          <div className='bg-white p-8 rounded-3xl shadow-xl border border-slate-100 mb-24 flex flex-col items-center gap-10 max-w-2xl mx-auto'>
              {/* Annual Toggle */}
              <div className='flex items-center gap-4 bg-slate-50 p-1 rounded-full'>
                 <button 
@@ -214,7 +214,7 @@ export default function Pricing() {
                 {plan.description}
               </p>
 
-              <div className='space-y-4 mb-10 flex-grow'>
+              <div className='space-y-4 mb-10 grow'>
                 {plan.features.map(feature => (
                   <div key={feature} className='flex gap-3 text-sm font-medium items-start group'>
                     <Check className={cn('w-5 h-5 shrink-0 transition-transform group-hover:scale-125', plan.name === 'Institutos' ? 'text-blue-300' : 'text-emerald-500')} />
@@ -248,8 +248,8 @@ export default function Pricing() {
              <p className='font-bold text-slate-900 mb-2'>Beneficios por Pago Anual:</p>
              <ul className='list-disc ml-4 space-y-1'>
                <li>Paga solo <strong className='text-emerald-600'>10 meses</strong> y recibe acceso por un año completo (15% de descuento).</li>
-               <li>Plan Institutos: $1,200 base (10 usuarios). Usuarios extra con tarifa decreciente ($110, $100, $90, $85).</li>
-               <li>Sincronización en la nube incluida en planes Nube e Institutos.</li>
+               <li>Plan Institutos: $1,200 base (10 usuarios). Usuarios extra con tarifa decreciente.</li>
+               <li><strong>Exámenes Personalizados:</strong> Diseñamos tu formato ideal desde $500 MXN (Solo requiere suscripción activa).</li>
              </ul>
            </div>
         </div>

@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, QrCode, Maximize2, MoreHorizontal } from 'luc
 
 export default function Hero() {
   return (
-    <section className='relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-b from-white to-slate-50'>
+    <section className='relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-white to-slate-50'>
       {/* Premium Background animations */}
       <div className='absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-indigo-50/40 rounded-full blur-[100px] -z-10 animate-pulse decoration-slate-900/5' />
       <div className='absolute bottom-0 right-0 w-[800px] h-[800px] bg-blue-50/40 rounded-full blur-[100px] -z-10' />

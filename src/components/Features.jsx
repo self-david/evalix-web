@@ -50,7 +50,7 @@ const extraFeatures = [
 
 export default function Features() {
   return (
-    <section id='features' className='bg-[#F8FAFC] py-32 relative'>
+    <section id='features' className='bg-[#F8FAFC] py-24 relative'>
       <div className='section-container'>
         <div className='text-center max-w-3xl mx-auto mb-20'>
           <h2 className='text-4xl lg:text-5xl mb-6 font-bold'>
