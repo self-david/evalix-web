@@ -12,6 +12,11 @@ export default defineConfig({
   adapter: cloudflare(),
 
   vite: {
+    resolve: {
+      alias: {
+        'react-dom/server': 'react-dom/server.edge'
+      }
+    },
     plugins: [tailwindcss()]
   }
 });
