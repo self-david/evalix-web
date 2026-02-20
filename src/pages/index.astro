@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.jsx";
 import Hero from "../components/Hero.jsx";
+import AppDemo from "../components/AppDemo.jsx";
 import HowItWorks from "../components/HowItWorks.jsx";
 import Features from "../components/Features.jsx";
 import CustomExams from "../components/CustomExams.jsx";
@@ -14,6 +15,7 @@ import Footer from "../components/Footer.jsx";
   <Header client:load />
   <main>
     <Hero client:load />
+    <AppDemo client:visible />
     <HowItWorks client:visible />
     <Features client:visible />
     <CustomExams client:visible />

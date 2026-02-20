@@ -49,7 +49,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-[#0B3D91] to-[#1E40AF] bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-[#0B3D91] to-[#1E40AF] bg-clip-text text-transparent;
   }
 }
 

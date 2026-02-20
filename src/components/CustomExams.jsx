@@ -114,7 +114,7 @@ export default function CustomExams() {
                   <span className='font-bold text-lg'>Licencia Vitalicia</span>
                 </div>
                 <p className='text-sm text-blue-100 leading-relaxed mb-4'>
-                  El cliente posee la licencia del diseño. Úsalo cuantas veces quieras mientras mantengas una suscripción activa.
+                  El diseño te pertenece para siempre. Escanéalo ilimitadamente usando la cámara de tu celular con tu suscripción activa.
                 </p>
                 <div className='flex items-baseline gap-2'>
                   <span className='text-xs opacity-60 font-bold uppercase tracking-wider'>Desde</span>

@@ -1,19 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Scan, FileEdit, CheckCircle2, BarChart } from 'lucide-react'
+import { Scan, FileEdit, CheckCircle2, BarChart, Smartphone } from 'lucide-react'
 
 const steps = [
   {
     id: 1,
-    title: 'Diseño Flexible',
-    description: 'Trae tus propios exámenes. Nuestro sistema se integra con tus formatos actuales, adaptando el scanner para reconocer tus hojas de siempre.',
-    icon: <FileEdit className='w-8 h-8 text-white' />,
+    title: 'Abre la App',
+    description: 'Descarga el APK e inicia sesión en segundos.',
+    icon: <Smartphone className='w-8 h-8 text-white' />,
     color: 'bg-blue-600'
   },
   {
     id: 2,
-    title: 'Escanea las hojas',
-    description: 'Usa la cámara de tu dispositivo o un escáner tradicional. Evalix detecta automáticamente los marcadores.',
+    title: 'Apunta y Corrige',
+    description: 'Usa tu cámara para escanear las hojas de respuesta.',
     icon: <Scan className='w-8 h-8 text-white' />,
     color: 'bg-indigo-600'
   },
@@ -42,16 +42,16 @@ export default function HowItWorks() {
       <div className='section-container'>
         <div className='text-center max-w-3xl mx-auto mb-20'>
           <h2 className='text-4xl lg:text-5xl mb-6 font-bold text-[#0B3D91]'>
-            Flujo de trabajo <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600'>sin fricción</span>
+            Flujo de trabajo <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-violet-600'>sin fricción</span>
           </h2>
           <p className='text-lg text-slate-600'>
-            Olvídate de las máquinas costosas y el software complicado. Evalix se integra en tu rutina docente en cuatro pasos simples.
+            Olvídate de buscar un escáner. Evalix convierte la cámara de tu celular en una herramienta profesional en cuatro pasos.
           </p>
         </div>
 
         <div className='relative'>
           {/* Connector Line (Desktop) */}
-          <div className='hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-blue-200 via-indigo-200 to-violet-200 -translate-y-1/2 -z-10 rounded-full' />
+          <div className='hidden md:block absolute top-1/2 left-0 w-full h-1 bg-linear-to-r from-blue-200 via-indigo-200 to-violet-200 -translate-y-1/2 -z-10 rounded-full' />
 
           <div className='grid md:grid-cols-4 gap-8'>
             {steps.map((step, index) => (

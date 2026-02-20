@@ -4,9 +4,9 @@ import { Shield, Zap, Sliders, BarChart3, Cloud, Layout, MousePointer2 } from 'l
 
 const features = [
   {
-    icon: <Sliders className='w-6 h-6' />,
-    title: 'Personalización total',
-    description: 'Nos ajustamos a tus evaluaciones. Nuestros modelos se calibran para reconocer tus formatos de examen existentes.',
+    icon: <Zap className='w-6 h-6' />,
+    title: 'Escaneo con Cámara',
+    description: 'Detección instantánea con la cámara de tu celular. Sin necesidad de hardware extra.',
     color: 'bg-blue-100 text-[#0B3D91]',
     visual: (
       <div className='absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none'>

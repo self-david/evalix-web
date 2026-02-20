@@ -101,8 +101,8 @@ export default function Pricing() {
           <h2 className='text-4xl lg:text-5xl mb-6 text-[#0B3D91] font-extrabold tracking-tight'>
             Precios competitivos, <span className='text-slate-900 underline decoration-blue-500/30 underline-offset-8'>sin sorpresas</span>
           </h2>
-          <p className='text-lg text-slate-600 mb-10 leading-relaxed font-light'>
-            Ajustamos nuestros costos para apoyarte. Usa el calculador institucional para ver tu ahorro por volumen.
+          <p className='text-lg text-slate-600 max-w-2xl mx-auto mb-16 font-light'>
+             Planes diseñados para crecer contigo. Empieza gratis con la versión demo de nuestra app y escala según tus necesidades.
           </p>
 
           {/* Controls Container */}
