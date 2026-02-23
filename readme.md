@@ -11,9 +11,9 @@
 
 Evalix is part of the **EXAMS Ecosystem**, a distributed suite of tools designed for full-cycle academic assessment management:
 
-- **[Qualifier](file:///c:/projects/EXAMS/qualifier)**: The core administrative engine. Used for creating exam templates, training custom AI models, and managing institutional data.
+- **[laboratory](file:///c:/projects/EXAMS/laboratory)**: The core administrative engine. Used for creating exam templates, training custom AI models, and managing institutional data.
 - **[scan-core](file:///c:/projects/EXAMS/scan-core)**: The high-performance Rust-based detection engine that powers both the web portal and the local scanning tools.
-- **[skeleton-scanner-exams](file:///c:/projects/EXAMS/skeleton-scanner-exams)**: The cross-platform scanning interface used for mass processing of exams.
+- **[evalix-app](file:///c:/projects/EXAMS/evalix-app)**: The cross-platform scanning interface used for mass processing of exams.
 
 ---
 
