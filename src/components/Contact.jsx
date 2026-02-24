@@ -21,7 +21,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className='text-blue-200 text-sm font-semibold uppercase tracking-widest'>Email directo</p>
-                <p className='text-xl font-bold italic'>hola@evalix.com</p>
+                <p className='text-xl font-bold italic'>hola@evalix.com.mx</p>
               </div>
             </div>
             <div className='flex items-center gap-6'>
@@ -30,7 +30,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className='text-blue-200 text-sm font-semibold uppercase tracking-widest'>Soporte</p>
-                <p className='text-xl font-bold italic'>Chat en vivo 24/7</p>
+                <p className='text-xl font-bold italic'>Respuesta en menos de 24h</p>
               </div>
             </div>
           </div>

@@ -45,16 +45,13 @@ export default function Hero() {
           </div>
           
           <div className='flex items-center gap-4 text-sm font-medium text-slate-500'>
-            <div className='flex -space-x-3'>
-               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className={`w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center overflow-hidden bg-cover bg-center`} style={{backgroundImage: `url('https://i.pravatar.cc/100?img=${i + 10}')`}}>
-                </div>
-              ))}
-              <div className='w-10 h-10 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-600'>
-                +1k
-              </div>
+            <div className='flex items-center gap-3 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full'>
+              <span className='relative flex h-2 w-2'>
+                <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75'></span>
+                <span className='relative inline-flex rounded-full h-2 w-2 bg-[#0B3D91]'></span>
+              </span>
+              <p className='text-[#0B3D91] font-semibold'>Lanzamiento oficial — Sé de los primeros</p>
             </div>
-            <p>Usado por docentes innovadores</p>
           </div>
         </motion.div>
 
