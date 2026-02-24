@@ -398,7 +398,7 @@ export default function AppDemo() {
 
                    <div className="flex flex-col gap-3 w-full md:w-auto">
                       <a
-                        href="/evalix.apk"
+                        href="https://vvwotxjzbsfjlgszdxfs.supabase.co/storage/v1/object/public/evalix-app/evalix.apk"
                         download="evalix.apk"
                         className="btn-primary bg-[#0B3D91] hover:bg-[#051C42] border-[#0B3D91] px-12 py-5 text-xl flex items-center justify-center gap-3 group ring-8 ring-blue-50/50 hover:ring-blue-100/50 transition-all shadow-xl shadow-blue-900/20"
                       >

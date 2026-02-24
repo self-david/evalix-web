@@ -36,7 +36,7 @@ export default function Hero() {
           
           <div className='flex flex-col sm:flex-row gap-4 mb-12'>
             <a
-              href='/evalix.apk'
+              href='https://vvwotxjzbsfjlgszdxfs.supabase.co/storage/v1/object/public/evalix-app/evalix.apk'
               download='evalix.apk'
               className='btn-primary flex items-center justify-center gap-2 group shadow-blue-900/20 shadow-lg hover:shadow-blue-900/30'
             >
