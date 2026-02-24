@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, CheckCircle2, QrCode, Maximize2, MoreHorizontal } from 'lucide-react'
+import { ArrowRight, CheckCircle2, QrCode, Maximize2, MoreHorizontal, Download } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -35,12 +35,16 @@ export default function Hero() {
           </p>
           
           <div className='flex flex-col sm:flex-row gap-4 mb-12'>
-            <a href='#demo' className='btn-primary flex items-center justify-center gap-2 group shadow-blue-900/20 shadow-lg hover:shadow-blue-900/30'>
-              Ver demostración
-                <ArrowRight className='w-5 h-5 group-hover:translate-x-1 transition-transform' />
+            <a
+              href='/evalix.apk'
+              download='evalix.apk'
+              className='btn-primary flex items-center justify-center gap-2 group shadow-blue-900/20 shadow-lg hover:shadow-blue-900/30'
+            >
+              Descargar APK
+              <Download className='w-5 h-5 group-hover:translate-y-1 transition-transform' />
             </a>
-            <a href='#how-it-works' className='btn-secondary flex items-center justify-center backdrop-blur-sm bg-white/50'>
-              Cómo funciona
+            <a href='#demo' className='btn-secondary flex items-center justify-center backdrop-blur-sm bg-white/50'>
+              Ver demostración
             </a>
           </div>
           
